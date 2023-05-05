@@ -15,12 +15,8 @@ int main(int argc, char ** argv)
         SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, W_WIDTH, W_HEIGHT, SDL_WINDOW_SHOWN);
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     
-    GameObject goPlane;
-    goPlane.init(renderer, "assets/rocket.png");
-
-    Background bg;
-    bg.init(renderer, "assets/bg.png");
-
+    GameObject goPlane(renderer, "assets/rocket.png");
+    Background bg(renderer, "assets/bg.png");
     Camera cam;
 
     SDL_SetRenderDrawColor(renderer, 50, 70, 150, 255);

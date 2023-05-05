@@ -19,7 +19,7 @@ public:
     SDL_Rect mClip;
     SDL_RendererFlip mFlip;
 
-    void init(SDL_Renderer* renderer, std::string path);
+    GameObject(SDL_Renderer* renderer, std::string path);
     void handleEvent(SDL_Event& e);
     void move();
     void render(int posx, int posy);

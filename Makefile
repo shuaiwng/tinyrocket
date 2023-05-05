@@ -12,7 +12,7 @@ $(EXE):$(OBJ)
 	$(CXX) $(OBJ) -L$(LIB) -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -o $(EXE)
   
 $(OBJ):$(SRC)
-	$(CC) $(FLAGS) -I$(INCLUDE) -c $(SRC)
+	$(CXX) $(FLAGS) -I$(INCLUDE) -c $(SRC)
 
 clean:
 	del $(OBJ) $(EXE)

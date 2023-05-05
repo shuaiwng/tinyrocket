@@ -1,6 +1,6 @@
 #include "background.h"
 
-void Background::init(SDL_Renderer* renderer, std::string path){
+Background::Background(SDL_Renderer* renderer, std::string path){
     mWidth = 12000;
     mHeight = 2000;
     mCAMWidth = 1200;

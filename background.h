@@ -14,7 +14,7 @@ public:
     SDL_Texture* mTexture;
     SDL_Rect mClip;
 
-    void init(SDL_Renderer* renderer, std::string path);
+    Background(SDL_Renderer* renderer, std::string path);
     void render(int, int);
 };
 

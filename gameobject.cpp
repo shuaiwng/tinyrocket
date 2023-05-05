@@ -1,6 +1,6 @@
 #include "gameobject.h"
 
-void GameObject::init(SDL_Renderer* renderer, std::string path){
+GameObject::GameObject(SDL_Renderer* renderer, std::string path){
     mPosX = 1000;
     mPosY = 500;
     mWidth = 64;
