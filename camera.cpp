@@ -7,6 +7,7 @@ Camera::Camera(){
 }
 
 void Camera::watch(GameObject* go, Background* bg){
+
     int camPosX = go->mPosX+go->mWidth/2 - mCAMWidth/2;
     int camPosY = go->mPosY+go->mHeight/2 - mCAMHeight/2;
 
